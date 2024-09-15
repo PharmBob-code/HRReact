@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Lifestyle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("nDxCy4z0AC3U56UC1"); // Replace with your actual User ID
+      })();
+    </script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate"); // Add the animate class
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(handleIntersection, {
+          threshold: 0.1, // Trigger when 10% of the element is visible
+        });
+
+        document.querySelectorAll(".container").forEach((container) => {
+          observer.observe(container); // Observe each container
+        });
+        console.log(document.querySelectorAll(".container"));
+      });
+    </script>
+  </body>
+</html>

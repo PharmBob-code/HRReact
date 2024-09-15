@@ -1,0 +1,36 @@
+/* CSS ANIMATION */
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.containerLeft.animate {
+  animation: moveInLeft 1.2s ease-out forwards;
+}
+
+.containerRight.animate {
+  animation: moveInRight 1.2s ease-out forwards;
+}
