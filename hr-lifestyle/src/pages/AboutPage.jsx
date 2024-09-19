@@ -68,10 +68,10 @@ export default function AboutPage({ toggleModal, isModalOpen, closeModal }) {
                 Empowering organizations to build exceptional workplace where
                 employees thrive and businesses succeed alongside providing
                 innovative HR solutions setting standards for excellence and
-                driving meaningful impact while cutting _edge technology and
-                best practices to revolutionize HR practices creating lasting
-                value for clients, employees and the community, enabling
-                unparalleled organization success.
+                driving meaningful impact while cutting edge technology and best
+                practices to revolutionize HR practices creating lasting value
+                for clients, employees and the community, enabling unparalleled
+                organization success.
               </p>
             </div>
 

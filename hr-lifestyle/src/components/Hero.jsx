@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-export default function Hero() {
+export default function Hero({ anim }) {
   return (
-    <div className="hero">
-      <div className="content">
-        <div className="display-text">
+    <div className="hero" onClick={anim}>
+      <div className="hero__content">
+        <div className="hero__display-text">
           <h1>ELEVATE YOUR WORKFORCE, ELEVATE YOUR BUSINESS</h1>
         </div>
-        <div className="description-text">
+        <div className="hero__description-text">
           <p>
             At HRlifestyle, we’re passionate about empowering your organization
             to reach its full potential. Our bespoke HR solutions are designed

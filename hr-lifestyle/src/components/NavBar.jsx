@@ -2,7 +2,6 @@ import logo from "../assets/HR_LIFESTYLE_LOGO.png";
 import { Link } from "react-router-dom";
 import MenuBar from "./MenuBar";
 import Modal from "./Modal";
-import Home from "../pages/Home";
 // Add this script to your JavaScript file to control slideIn
 /*window.addEventListener("scroll", () => {
   const containers = document.querySelectorAll(".container"); // Replace with your container class

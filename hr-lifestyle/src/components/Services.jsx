@@ -1,151 +1,214 @@
 import { Link } from "react-router-dom";
-import styles from "./modules/About.module.css";
 
 export default function Services() {
   return (
-    <div className="services">
-      <h1>OUR SERVICES</h1>
+    <div className="top-services">
+      <h1 className="services-head">OUR SERVICES</h1>
 
-      {/* RECRUITMENT  */}
-      <div className="recruitment rh">
-        <div className={`left top container container-left`}></div>
+      <div className="services">
+        {/* <!-- RECRUITMENT --> */}
+        <section className="hrrecruitment rh" id="recruitment">
+          <div className="hrtitle">
+            <h1>Recruitment</h1>
+            <div className="hrline"></div>
+          </div>
 
-        <div className={`right down container container-right`}>
-          <h1>Recruitment</h1>
-          <div className="line"></div>
-          <p>
-            Our recruitment services are designed to help you attract and select
-            the best talent for your organization. We utilize advanced sourcing
-            strategies, behavioral assessments, and industry insights to ensure
-            you have the right people in the right roles, driving your business
-            forward.
-          </p>
-          <ul>
-            <li>Expertise And Specialization</li>
-            <li>Cost Saving</li>
-          </ul>
+          <div className="hrbody">
+            <div className="left"></div>
 
-          <Link to="./services.html#recruitment">
-            <button>LEARN MORE</button>
-          </Link>
-        </div>
-      </div>
+            <div className="right">
+              <p>
+                Our recruitment services are designed to help you attract and
+                select the best talent for your organization. We utilize
+                advanced sourcing strategies, behavioral assessments, and
+                industry insights to ensure you have the right people in the
+                right roles, driving your business forward.
+              </p>
+              <ul>
+                <li className="hrsubtitle">How We Achieve This:</li>
+                <ul>
+                  <li>
+                    Conduct in-depth job analysis to understand your needs.
+                  </li>
+                  <li>
+                    Utilize advanced sourcing techniques to find top talent.
+                  </li>
+                  <li>Implement a thorough screening and interview process.</li>
+                  <li>Provide seamless onboarding support.</li>
+                </ul>
+              </ul>
 
-      {/* TALENT MGT */}
-      <div className="talent-mgt lh">
-        <div className="left top container container-left">
-          <h1>
-            Talent <br />
-            Management
-          </h1>
-          <div className="line"></div>
-          <p>
-            We provide talent management solutions that nurture and develop your
-            employees. From performance management to leadership development,
-            our services are aimed at maximizing your workforce's potential and
-            aligning it with your business goals.
-          </p>
+              <Link to="/contact">
+                <button>Get in Touch</button>
+              </Link>
+            </div>
+          </div>
+        </section>
 
-          <ul>
-            <li>Cost Saving</li>
-            <li>Flexibility and Scalability</li>
-            <li>Talent Acquisition and Retention</li>
-            <li>Development and Training</li>
-            <li>Conflict Resolution and Employee Relation</li>
-          </ul>
-          <Link to="./services.html#talent-mgt">
-            <button>LEARN MORE</button>
-          </Link>
-        </div>
+        {/* <!-- TALENT MGT --> */}
+        <section className="hrtalent-mgt lh" id="talent-mgt">
+          <div className="hrtitle">
+            <h1>Talent Management</h1>
+            <div className="hrline"></div>
+          </div>
 
-        <div className="right down container container-right"></div>
-      </div>
+          <div className="hrbody">
+            <div className="left">
+              <p>
+                We provide talent management solutions that nurture and develop
+                your employees. From performance management to leadership
+                development, our services are aimed at maximizing your
+                workforce's potential and aligning it with your business goals.
+              </p>
+              <ul>
+                <li className="hrsubtitle">How We Achieve This:</li>
+                <ul>
+                  <li>
+                    Design personalized development plans for key employees.
+                  </li>
+                  <li>
+                    Implement performance management systems that drive
+                    excellence.
+                  </li>
+                  <li>Develop retention strategies to minimize turnover.</li>
+                  <li>
+                    Foster employee engagement through continuous feedback and
+                    recognition.
+                  </li>
+                </ul>
+              </ul>
+              <Link to="/contact">
+                <button>Get in Touch</button>
+              </Link>
+            </div>
 
-      {/* TRAINING & DEV */}
-      <div className="training-dev rh">
-        <div className="left top container container-left"></div>
+            <div className="right"></div>
+          </div>
+        </section>
 
-        <div className="right down container container-right">
-          <h1>
-            Training & <br />
-            Development
-          </h1>
-          <div className="line"></div>
-          <p>
-            Our tailored training programs are designed to enhance the skills
-            and competencies of your workforce. Whether it's technical skills,
-            soft skills, or leadership training, we create development plans
-            that are aligned with your organizational objectives.
-          </p>
-          <ul>
-            <li>Talent Acquisition and Retention</li>
-            <li>Technology Integration and Innovation</li>
-            <li>Development and Training</li>
-          </ul>
-          <Link to="./services.html#training-dev">
-            <button>LEARN MORE</button>
-          </Link>
-        </div>
-      </div>
+        {/* <!-- TRAINING & DEV --> */}
+        <section className="hrtraining-dev rh" id="training-dev">
+          <div className="hrtitle">
+            <h1>Training & Development</h1>
+            <div className="hrline"></div>
+          </div>
 
-      {/* HR STRATEGIES & POLICIES  */}
-      <div className="strat-pol lh">
-        <div className="left top container container-left">
-          <h1>
-            HR Strategies <br />
-            and Policies
-          </h1>
-          <div className="line"></div>
-          <p>
-            We help organizations develop and implement effective HR strategies
-            and policies that support business growth and compliance. From
-            workforce planning to employee relations, our services ensure that
-            your HR practices are both strategic and operationally sound.
-          </p>
+          <div className="hrbody">
+            <div className="left"></div>
 
-          <ul>
-            <li>Expertise And Specialization</li>
-            <li>Compliance and Risk Management</li>
-            <li>Flexibility and Scalability</li>
-            <li>Strategic Planning And Business Growth</li>
-          </ul>
-          <Link to="./services.html#strat-pol">
-            <button>LEARN MORE</button>
-          </Link>
-        </div>
+            <div className="right">
+              <p>
+                Our tailored training programs are designed to enhance the
+                skills and competencies of your workforce. Whether it's
+                technical skills, soft skills, or leadership training, we create
+                development plans that are aligned with your organizational
+                objectives.
+              </p>
 
-        <div className="right down container container-right"></div>
-      </div>
+              <ul>
+                <li className="hrsubtitle">How We Achieve This:</li>
+                <ul>
+                  <li>Conduct needs assessments to identify skill gaps.</li>
+                  <li>
+                    Develop tailored training programs to address specific
+                    needs.
+                  </li>
+                  <li>Deliver interactive and practical training sessions.</li>
+                  <li>
+                    Measure the impact of training on employee performance.
+                  </li>
+                </ul>
+              </ul>
 
-      {/* HR BUSINESS PARTNER  */}
-      <div className="hr-business-partner rh">
-        <div className="left top container container-left"></div>
+              <Link to="/contact">
+                <button>Get in Touch</button>
+              </Link>
+            </div>
+          </div>
+        </section>
 
-        <div className="right down container container-right">
-          <h1>
-            HR Business <br />
-            Partner Services
-          </h1>
-          <div className="line"></div>
-          <p>
-            At HRlifestyle, we understand that effective human resource
-            management is the backbone of any successful organization. Our HR
-            Business Partner services are designed to strategically align your
-            HR functions with your overall business goals. As your HR Business
-            Partner, we work closely with your leadership team to deliver
-            tailored solutions that foster a productive and engaged workforce.
-            Partner with us to transform your HR operations into a strategic
-            asset that propels your business forward.
-          </p>
-          <ul>
-            <li>Strategic Alignment</li>
-            <li>Strategic Planning And Business Growth</li>
-          </ul>
+        {/* <!-- HR STRATEGIES & POLICIES --> */}
+        <section className="hrstrat-pol lh" id="strat-pol">
+          <div className="hrtitle">
+            <h1>HR Strategies and Policies</h1>
+            <div className="hrline"></div>
+          </div>
 
-          <Link to="./services.html#hr-business-partner">
-            <button>LEARN MORE</button>
-          </Link>
-        </div>
+          <div className="hrbody">
+            <div className="left">
+              <p>
+                We help organizations develop and implement effective HR
+                strategies and policies that support business growth and
+                compliance. From workforce planning to employee relations, our
+                services ensure that your HR practices are both strategic and
+                operationally sound.
+              </p>
+
+              <ul>
+                <li className="hrsubtitle">How We Achieve This:</li>
+                <ul>
+                  <li>
+                    Analyze your current HR practices and identify areas for
+                    improvement.
+                  </li>
+                  <li>
+                    Develop customized HR strategies that support your business
+                    objectives.
+                  </li>
+                  <li>
+                    Ensure compliance with labor laws and industry regulations.
+                  </li>
+                  <li>
+                    Create clear, comprehensive policies to guide your
+                    organization.
+                  </li>
+                </ul>
+              </ul>
+
+              <Link to="/contact">
+                <button>Get in Touch</button>
+              </Link>
+            </div>
+
+            <div className="right"></div>
+          </div>
+        </section>
+
+        {/* <!-- HR BUSINESS PARTNER --> */}
+        <section className="hrbusiness-partner rh" id="hr-business-partner">
+          <div className="hrtitle">
+            <h1>HR Business Partner Services</h1>
+            <div className="hrline"></div>
+          </div>
+
+          <div className="hrbody">
+            <div className="left"></div>
+
+            <div className="right">
+              <p>
+                At HRlifestyle, we understand that effective human resource
+                management is the backbone of any successful organization. Our
+                HR Business Partner services are designed to strategically align
+                your HR functions with your overall business goals. As your HR
+                Business Partner, we work closely with your leadership team to
+                deliver tailored solutions that foster a productive and engaged
+                workforce. Partner with us to transform your HR operations into
+                a strategic asset that propels your business forward.
+              </p>
+              <ul>
+                <li className="hrsubtitle">How We Achieve This:</li>
+                <ul>
+                  <li>Expertise And Specialization</li>
+                  <li>Cost Saving</li>
+                </ul>
+              </ul>
+
+              <Link to="/contact">
+                <button>Get in Touch</button>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import Assurance from "../components/Assurance";
 import Footer from "../components/Footer";
 import FloatingActionButton from "../components/FloatingActionButton";
 
-export default function Home({ toggleModal, isModalOpen, closeModal }) {
+export default function Home({ anim, toggleModal, isModalOpen, closeModal }) {
   return (
     <div>
       <TopColor />
@@ -17,7 +17,7 @@ export default function Home({ toggleModal, isModalOpen, closeModal }) {
         isModalOpen={isModalOpen}
         closeModal={closeModal}
       />
-      <Hero />
+      <Hero anim={anim} />
       <FloatingActionButton />
       <About />
       <Services />

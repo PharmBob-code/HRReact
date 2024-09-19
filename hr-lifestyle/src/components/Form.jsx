@@ -136,7 +136,8 @@ export default function Form({
       </div>
       {/* Phone Field */}
       <div className="form-group">
-        <label htmlFor="phone">Phone Number:</label>
+        <label htmlFor="phone">Enter your phone number:</label>
+        <br />
         <input
           type="tel"
           value={input.phone}

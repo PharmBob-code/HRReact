@@ -8,14 +8,14 @@
     padding: 8px 0 8px 0;
   }
 
-  .header {
+  .navbar {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 2.5rem;
+    padding: 0.2rem 4rem;
     /* padding: 0.2rem 0.5rem; */
   }
 
@@ -41,12 +41,12 @@
     padding: 3rem 0;
   }
 
-  .hero .content {
+  .hero__content {
     row-gap: 1rem;
-    padding: 16px 3rem;
+    padding: 16px 4rem;
   }
 
-  .display-text h1,
+  .hero__display-text h1,
   h1 {
     color: white;
     font-size: 54px;
@@ -54,21 +54,21 @@
     line-height: 67px;
   }
 
-  .description-text {
+  .hero__description-text {
     width: 80%;
   }
 
   .about {
-    padding: 5rem 3rem;
+    padding: 4rem 4rem;
     column-gap: 1.5rem;
     align-items: stretch;
   }
 
-  .about .left {
+  .about__left {
     row-gap: 0.5rem;
   }
 
-  .about .left h1 {
+  .about__left h1 {
     font-size: 32px;
     font-weight: 780;
     line-height: 38px;
@@ -79,54 +79,85 @@
     height: auto;
   }
 
-  .about .line {
+  .about__line {
     width: 80%;
     margin: 1px 0;
   }
 
-  .our-service {
-    padding: 3rem 3rem;
+  .services-head {
+    width: 100%;
+    font-size: 38px;
+    font-weight: 800;
+    color: #092a41;
+    padding: 0 4rem;
   }
 
-  .our-service h1 {
-    font-size: 36px;
-  }
-
-  /* right hand arrangement of our services */
-  .rh,
-  .lh {
-    column-gap: 2rem;
-  }
-
-  .rh .right,
-  .lh .left {
-    width: 50%;
+  .services {
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 0.5rem;
+    padding: 0 4rem;
   }
 
-  .rh .right h1,
-  .lh .left h1 {
-    font-size: 32px;
+  .services .hrtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .services .hrtitle h1 {
+    font-size: 38px;
     font-weight: 800;
-    line-height: 38px;
+    line-height: 42px;
+    color: #092a41;
   }
 
-  .rh .line,
-  .lh .line {
-    width: 80%;
-    margin: 2px 0;
+  .services .hrline {
+    width: 50%;
+    height: auto;
+    border: 0.1px solid #023c7e;
   }
 
-  .rh .right button,
-  .lh .left button {
-    padding: 14px 22px;
-    border-radius: 0;
+  /* .our-services-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 1rem 0 1rem;
+    row-gap: 1.5rem;
+    background-color: red;
+  } */
+
+  ul {
+    padding-left: 1.5rem;
   }
+
+  li {
+    color: #092a41;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  /* right hand arrangement of our services new code */
+  .rh,
+  .lh {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0;
+    margin-bottom: 3rem;
+  }
+  /* right hand arrangement of our services */
 
   .why-choose .left {
     row-gap: 1.5rem;
@@ -141,7 +172,7 @@
   .assurance {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("./assets/ASSURANCE.jpg") 0 5% no-repeat;
     /*  The Linear gradient directly combines the a color tint with the background image using background-blend-mode, which is a cleaner solution when blending is needed. This offers an alternative to overlay */
     background-size: cover;
@@ -162,11 +193,14 @@
 
   .assurance h1 {
     color: rgba(252, 252, 252, 1);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
   }
 
   .assurance p {
-    width: 70%;
-    color: rgb(225, 225, 225, 0.8);
+    width: 60%;
+    color: rgba(255, 255, 255);
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -188,12 +222,13 @@
   /* PAGES */
 
   .page-header {
-    height: 26vh;
-    padding-left: 3rem;
+    height: 45vh;
+    padding-left: 4rem;
   }
 
   .page-header h1 {
-    font-size: 38px;
+    font-size: 40px;
+    line-height: 45px;
   }
 
   /* ABOUT */
@@ -204,17 +239,18 @@
   }
 
   .about-main {
-    row-gap: 2rem;
+    row-gap: 0;
   }
 
   .brief {
     width: 100%;
-    row-gap: 0.75rem;
-    padding: 5rem 3rem;
+    row-gap: 0.5rem;
+    padding: 4rem 4rem;
   }
 
   .brief h1 {
-    font-size: 26px;
+    font-size: 38px;
+    line-height: 48pxpx;
   }
 
   .brief p {
@@ -226,21 +262,22 @@
   .values {
     width: 100%;
     height: auto;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #d7d7d7;
   }
 
   .values .left {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    padding: 2rem 1rem 2rem 4rem;
     row-gap: 1.5rem;
-    padding: 3rem;
   }
 
   .values .wrap {
@@ -250,7 +287,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 0.75rem;
+    row-gap: 0.2rem;
   }
 
   .values .left h1 {
@@ -258,35 +295,31 @@
   }
 
   .values .right {
-    width: 100%;
-    height: 100vh;
-    background: url(./unnamed.jpg) top no-repeat;
+    width: 50%;
+    height: auto;
+    background: url("./assets/ceo.jpg") top no-repeat;
     background-size: cover;
     background-position-y: 10%;
     transform: scaleX(-1);
     padding: 15rem 0;
   }
 
-  .why-us {
-    width: 100%;
-    height: auto;
-  }
-
   .why-us .right {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 2rem;
-    padding: 4rem 7rem;
+    padding: 4rem 1rem 4rem 4rem;
     background-color: #0e2239;
     color: white;
   }
 
-  .why-us br {
-    display: none;
+  .why-us h1 {
+    font-size: 34px;
+    line-height: 42px;
   }
 
   .why-us .right .point {
@@ -297,15 +330,6 @@
     justify-content: center;
     align-items: center;
     column-gap: 1rem;
-  }
-
-  .why-us .left {
-    display: none;
-  }
-
-  .why-us h1 {
-    font-size: 26px;
-    line-height: 34px;
   }
 
   .why-us.point p {
@@ -319,17 +343,40 @@
 
   .services-page {
     background: linear-gradient(rgb(0, 3, 3, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./SERVICES.jpg);
+      url("./assets/SERVICES.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 60%;
+  }
+
+  .our-services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 4rem 0 1rem 0;
+    row-gap: 0.5rem;
+    background-color: #d7d7d7;
+  }
+
+  .our-services-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
   }
 
   /* CONTACT PAGE */
   /* CONTACT */
   .contact-page {
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./handshake.jpg) center no-repeat;
+      url("./assets/handshake.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -337,11 +384,11 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
     row-gap: 2.5rem;
-    padding: 3rem 2rem;
+    padding: 4rem 4rem;
   }
 
   .contact-main .left {
@@ -452,13 +499,192 @@
   }
 }
 
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 3rem;
+    /* padding: 0.2rem 0.5rem; */
+  }
   .nav-area {
     width: 72%;
   }
+  .hero {
+    padding: 3rem 0;
+  }
 
-  .description-text {
+  .hero__content {
+    row-gap: 1rem;
+    padding: 16px 3rem;
+  }
+
+  .hero__display-text h1,
+  h1 {
+    font-size: 52px;
+    line-height: 65px;
+  }
+
+  .hero__description-text {
+    width: 80%;
+  }
+
+  .hero__description-text {
     width: 100%;
+  }
+
+  .about {
+    padding: 3rem 3rem;
+    column-gap: 1.5rem;
+    align-items: stretch;
+  }
+  .page-header {
+    height: 45vh;
+    padding-left: 3rem;
+  }
+
+  .brief {
+    row-gap: 0.5rem;
+    padding: 4rem 3rem;
+  }
+
+  .brief h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .values .left {
+    padding: 3rem 1rem 3rem 3rem;
+    row-gap: 1.2rem;
+  }
+
+  .why-us .right {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    padding: 3rem 1rem 3rem 3rem;
+    background-color: #0e2239;
+    color: white;
+  }
+
+  .why-us h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .why-us .right .point {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .why-us.point p {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .services-head {
+    padding: 0 3rem;
+  }
+  .services {
+    padding: 0 3rem;
+  }
+
+  .services .hrtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .services .hrtitle h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #092a41;
+  }
+
+  ul .hrsubtitle {
+    color: #092a41;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+  }
+
+  .services p {
+    color: #092a41;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .services .hrline {
+    width: 50%;
+    height: auto;
+    border: 0.1px solid #023c7e;
+  }
+
+  .rh,
+  .lh {
+    row-gap: 0;
+    margin-bottom: 3rem;
+  }
+
+  .services .hrbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 3rem;
+  }
+
+  .assurance h1 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 75%;
+  }
+
+  .our-services {
+    padding: 4rem 0 2rem 0;
+    row-gap: 0.3rem;
+    background-color: #d7d7d7;
+  }
+
+  .our-services-top {
+    padding: 0 3rem;
+    row-gap: 0.5rem;
+  }
+
+  .our-services h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .our-services .para {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .contact-main {
+    column-gap: 1rem;
+    padding: 4rem 3rem;
   }
 }
 
@@ -480,7 +706,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 3rem;
     /* padding: 0.2rem 0.5rem; */
   }
 
@@ -503,7 +729,7 @@
     padding: 3rem 0;
   }
 
-  .hero .content {
+  .hero__content {
     width: 100%;
     height: auto;
     display: flex;
@@ -514,11 +740,11 @@
     padding: 16px 2rem;
   }
 
-  .display-text {
+  .hero__display-text {
     width: 100%;
   }
 
-  .display-text h1,
+  .hero__display-text h1,
   h1 {
     color: white;
     font-size: 50px;
@@ -526,22 +752,22 @@
     line-height: 62px;
   }
 
-  .description-text {
+  .hero__description-text {
     width: 95%;
   }
 
   .about {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     column-gap: 1.5rem;
     align-items: stretch;
   }
 
-  .about .left {
+  .about__left {
     width: 55%;
     row-gap: 0.2rem;
   }
 
-  .about .left h1 {
+  .about__left h1 {
     font-size: 32px;
     font-weight: 780;
     line-height: 38px;
@@ -553,23 +779,66 @@
     height: auto;
   }
 
-  .about .line {
+  .about__line {
     width: 80%;
     margin: 2px 0;
   }
 
-  .services {
-    padding: 3rem 2rem;
+  .services-head {
+    font-size: 34px;
+    font-weight: 800;
+    color: #092a41;
+    padding: 0 2rem;
   }
 
-  .our-service h1 {
-    font-size: 36px;
+  .services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 2rem;
+  }
+
+  .services .hrtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .services .hrtitle h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #092a41;
+  }
+
+  ul .hrsubtitle {
+    color: #092a41;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 800;
+  }
+
+  .services p {
+    color: #092a41;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .services .hrline {
+    width: 50%;
+    height: auto;
+    border: 0.1px solid #023c7e;
   }
 
   /* right hand arrangement of our services */
   .rh,
   .lh {
-    column-gap: 0.75rem;
+    column-gap: 0.5rem;
   }
 
   .rh .right,
@@ -581,19 +850,6 @@
     justify-content: start;
     align-items: start;
     row-gap: 0.3rem;
-  }
-
-  .rh .right h1,
-  .lh .left h1 {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38px;
-  }
-
-  .rh .line,
-  .lh .line {
-    width: 80%;
-    margin: 3px 0;
   }
 
   .rh .right button,
@@ -672,12 +928,18 @@
   /* PAGES */
 
   .page-header {
-    height: 25vh;
+    height: 35vh;
     padding-left: 3rem;
   }
 
+  .breadcrumbs {
+    column-gap: 0.3rem;
+    padding: 0.5rem 0;
+  }
+
   .page-header h1 {
-    font-size: 38px;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   /* ABOUT */
@@ -689,22 +951,23 @@
   }
 
   .about-main {
-    row-gap: 2rem;
+    row-gap: 0;
   }
 
   .brief {
     width: 100%;
     row-gap: 0.5rem;
-    padding: 0 3rem 0 3rem;
+    padding: 3rem 3rem 2rem 3rem;
   }
 
   .brief h1 {
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .brief p {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 22px;
   }
 
@@ -715,6 +978,7 @@
     justify-content: start;
     align-items: start;
     padding: 0;
+    row-gap: 0;
   }
 
   .values .left {
@@ -724,8 +988,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 1.5rem;
-    padding: 3rem;
+    row-gap: 1rem;
+    padding: 3rem 3rem 1rem 3rem;
   }
 
   .values .wrap {
@@ -735,17 +999,17 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 0.5rem;
+    row-gap: 0.2rem;
   }
 
   .values .left h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .values .right {
     width: 100%;
-    height: 100vh;
-    background: url(./unnamed.jpg) top no-repeat;
+    height: auto;
+    background: url("./assets/ceo.jpg") top no-repeat;
     background-size: cover;
     background-position-y: 10%;
     transform: scaleX(-1);
@@ -804,17 +1068,762 @@
 
   .services-page {
     background: linear-gradient(rgb(0, 3, 3, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./SERVICES.jpg);
+      url("./assets/SERVICES.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 60%;
   }
 
+  .our-services {
+    padding: 3rem 0;
+    row-gap: 0.2rem;
+    background-color: #d7d7d7;
+  }
+
+  .our-services-top {
+    padding: 0 3rem;
+  }
+  .our-services h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .our-services .para {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: start;
+  }
+
+  #services {
+    padding: 0 3rem;
+  }
+  .services .hrtitle {
+    row-gap: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
   /* CONTACT PAGE */
   /* CONTACT */
   .contact-page {
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(./handshake.jpg) center no-repeat;
+      url("./assets/handshake.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .contact-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 2.5rem;
+    padding: 3rem 3rem;
+  }
+
+  .contact-main .left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+  }
+
+  .contact-main .box {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-main .top {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 6px;
+  }
+
+  .contact-main hr {
+    border: 0.5px solid #023c7e;
+    margin-bottom: 0.5rem;
+  }
+
+  .top .bi {
+    color: #023c7e;
+    font-size: 12px;
+  }
+
+  .top h6 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #023c7e;
+  }
+
+  .box h4 {
+    font-size: 18px;
+    font-weight: 300;
+    text-indent: 1.2rem;
+    color: #436176;
+  }
+
+  .contact-main .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+  }
+
+  .contact-main h3 {
+    color: #0e2239;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+  }
+  form .form-group {
+    width: 100%;
+    height: auto;
+  }
+  form .f-input,
+  textarea {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(195, 197, 218);
+    background-color: rgb(237, 238, 250);
+    padding: 12px 12px;
+  }
+
+  label {
+    color: #023c7e;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .submit {
+    width: 100%;
+    height: auto;
+    padding: 16px 24px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #092a41;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem 3rem;
+    column-gap: 1rem;
+  }
+}
+
+/* SMALL IPAD SCREENS */
+@media screen and (max-width: 768px) {
+  .top-color {
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    padding: 8px 0 8px 0;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem;
+    /* padding: 0.2rem 0.5rem; */
+  }
+
+  .nav-area {
+    display: none;
+  }
+
+  .menu-bar {
+    width: fit-content;
+    height: auto;
+    display: flex;
+  }
+
+  .menu-bar .bi:hover {
+    color: aqua;
+    transition: 0.5s ease-in-out;
+  }
+
+  .menu-bar .bi {
+    color: #023c7e;
+    font-size: 42px;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.75rem;
+    padding: 16px 2rem;
+  }
+
+  .hero__display-text {
+    width: 100%;
+  }
+
+  .hero__display-text h1,
+  h1 {
+    color: white;
+    font-size: 38px;
+    font-weight: 750;
+    line-height: 48px;
+  }
+
+  .hero__description-text {
+    width: 95%;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 2rem;
+    row-gap: 0.5rem;
+  }
+
+  .about__left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+  .about__left h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    color: #092a41;
+  }
+
+  .about__line {
+    width: 100%;
+    border: 0.1px solid #023c7e;
+    margin: 2px 0;
+  }
+
+  .about__left p {
+    color: #092a41;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .about__left button {
+    padding: 14px 20px;
+    margin-top: 8px;
+  }
+
+  .about .right {
+    width: 100%;
+    height: auto;
+    background: url("./assets/ABOUT.png") 50% 10% no-repeat;
+    background-size: cover;
+    transform: scaleX(1);
+    padding: 9rem 10rem;
+  }
+
+  /*  */
+
+  .top-services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .services-head {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    padding: 0 2rem;
+  }
+
+  .services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 2rem;
+  }
+
+  .services .hrtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    margin-bottom: 0;
+  }
+  .services .hrtitle h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #092a41;
+  }
+
+  ul .hrsubtitle {
+    color: #092a41;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 800;
+  }
+
+  .services p {
+    color: #092a41;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .services .hrline {
+    width: 50%;
+    height: auto;
+    border: 0.1px solid #023c7e;
+  }
+  /* .our-services-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 1rem 0 1rem;
+    row-gap: 1.5rem;
+    background-color: red;
+  } */
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #092a41;
+    font-weight: 400;
+  }
+
+  .rh,
+  .lh {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .services .hrtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .services .hrtitle h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #092a41;
+  }
+
+  .services .hrline {
+    width: 50%;
+    height: auto;
+    padding-left: 0;
+    border: 0.1px solid #023c7e;
+  }
+
+  .rh .hrbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+
+  .lh .hrbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+
+  .rh .right,
+  .lh .left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+
+  .services p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #092a41;
+  }
+  ul .hrsubtitle {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .services button {
+    padding: 14px 20px;
+    margin-top: 0;
+  }
+
+  .hrrecruitment .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrtraining-dev .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrbusiness-partner .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrtalent-mgt .right {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrstrat-pol .right {
+    width: 100%;
+    padding: 110px 0;
+  }
+  .why-choose .left {
+    row-gap: 1.5rem;
+    padding: 4rem 2rem;
+  }
+
+  .why-choose h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .assurance {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./assets/ASSURANCE.jpg") 30% 0 no-repeat;
+    /*  The Linear gradient directly combines the a color tint with the background image using background-blend-mode, which is a cleaner solution when blending is needed. This offers an alternative to overlay */
+    background-size: cover;
+    position: relative;
+    padding: 2rem 0;
+  }
+
+  .assurance .container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+    padding: 4px 2rem;
+  }
+
+  .assurance h1 {
+    width: 90%;
+    color: rgb(255, 245, 245, 0.8);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .assurance p {
+    width: 80%;
+    color: rgb(225, 225, 225, 0.8);
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 22px;
+  }
+
+  .assurance button {
+    width: fit-content;
+    height: auto;
+    padding: 14px 20px;
+    background-color: #023c7e;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: start;
+    padding: 1.5rem 5rem 1rem 5rem;
+  }
+
+  .footer .left {
+    width: 100%;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer .center,
+  .footer .right {
+    display: none;
+  }
+  .footer .right {
+    display: flex;
+  }
+  .footer .wrap {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  .wrap i {
+    font-size: 16px;
+    color: aqua;
+  }
+
+  .icon-box i {
+    font-size: 24px;
+  }
+
+  /* PAGES */
+
+  .page-header {
+    height: 28vh;
+    padding-left: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  /* ABOUT */
+  .about-page {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%;
+  }
+
+  .about-main {
+    row-gap: 0;
+  }
+
+  .brief {
+    width: 100%;
+    row-gap: 0.5rem;
+    padding: 4rem 3rem 2rem 3rem;
+  }
+
+  .brief h1 {
+    font-size: 24px;
+  }
+
+  .brief p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .values {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+  }
+
+  .values .left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    padding: 3rem;
+  }
+
+  .values .wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.1rem;
+  }
+
+  .values .left h1 {
+    font-size: 18px;
+  }
+
+  .values .left p {
+    font-size: 14px;
+  }
+
+  .values .right {
+    width: 100%;
+    height: auto;
+    background: url("./assets/ceo.jpg") top no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+    transform: scaleX(-1);
+    padding: 15rem 0;
+  }
+
+  .why-us {
+    width: 100%;
+    height: auto;
+  }
+
+  .why-us .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    padding: 4rem 7rem;
+    background-color: #0e2239;
+    color: white;
+  }
+
+  .why-us br {
+    display: none;
+  }
+
+  .why-us .right .point {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .why-us .left {
+    display: none;
+  }
+
+  .why-us h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .why-us .point p {
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  /* SERVICES PAGE */
+
+  .services-page {
+    background: linear-gradient(rgb(0, 3, 3, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./assets/SERVICES.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+  }
+
+  .our-services h1 {
+    font-size: 24px;
+  }
+  .our-services-container {
+    row-gap: 1rem;
+  }
+
+  .title {
+    width: 100%;
+  }
+  /* CONTACT PAGE */
+  /* CONTACT */
+  .contact-page {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./assets/handshake.jpg") center no-repeat;
     background-size: cover;
   }
 
@@ -942,7 +1951,6 @@
   .top-color {
     width: 100%;
     height: auto;
-    background-color: #ff0404;
     color: white;
     display: block;
     padding: 8px 16px;
@@ -980,7 +1988,7 @@
 
   .logo-wrapper {
     width: 100%;
-    height: 60px;
+    height: 40px;
   }
 
   img {
@@ -995,7 +2003,7 @@
 
   .menu-bar .bi {
     color: #023c7e;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .hero {
@@ -1009,7 +2017,7 @@
     padding: 3rem 0;
   }
 
-  .hero .content {
+  .hero__content {
     width: 100%;
     height: auto;
     display: flex;
@@ -1020,11 +2028,11 @@
     padding: 1.5rem;
   }
 
-  .display-text {
+  .hero__display-text {
     width: 100%;
   }
 
-  .display-text h1,
+  .hero__display-text h1,
   h1 {
     color: white;
     font-size: 28px;
@@ -1032,11 +2040,11 @@
     line-height: 36px;
   }
 
-  .description-text {
+  .hero__description-text {
     width: 100%;
   }
 
-  .hero .content p {
+  .hero__content p {
     width: 95%;
     color: rgb(225, 225, 225);
     font-size: 14px;
@@ -1063,11 +2071,10 @@
     justify-content: start;
     align-items: center;
     padding: 2rem 1.5rem;
-    row-gap: 1rem;
-    margin: 1rem 0;
+    row-gap: 0.5rem;
   }
 
-  .about .left {
+  .about__left {
     width: 100%;
     height: auto;
     display: flex;
@@ -1077,27 +2084,27 @@
     row-gap: 0.5rem;
   }
 
-  .about .left h1 {
-    font-size: 26px;
+  .about__left h1 {
+    font-size: 24px;
     font-weight: 800;
     line-height: 30px;
     color: #092a41;
   }
 
-  .about .line {
+  .about__line {
     width: 90%;
     border: 0.1px solid #023c7e;
     margin: 2px 0;
   }
 
-  .about .left p {
-    color: #3d5771;
+  .about__left p {
+    color: #092a41;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 22px;
   }
 
-  .about .left button {
+  .about__left button {
     padding: 14px 20px;
     margin-top: 8px;
   }
@@ -1110,6 +2117,26 @@
     transform: scaleX(-1);
     padding: 6rem 10rem;
   }
+  /* new code */
+
+  .top-services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .services-head {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+  }
+
   .services {
     width: 100%;
     height: auto;
@@ -1117,20 +2144,21 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 2.5rem 2rem;
-    row-gap: 0.5rem;
-    background-color: #d7d7d7;
+    padding: 0 1rem;
+    row-gap: 0;
   }
 
-  .services h1 {
-    font-size: 32px;
-    margin-bottom: 0.5rem;
-  }
-
-  .lh p,
-  .rh p {
-    margin-bottom: 0.5rem;
-  }
+  /* .our-services-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0 1rem 0 1rem;
+    row-gap: 1.5rem;
+    background-color: red;
+  } */
 
   ul {
     padding-left: 1.5rem;
@@ -1139,15 +2167,10 @@
   li {
     font-size: 14px;
     line-height: 20px;
+    color: #092a41;
+    font-weight: 400;
   }
 
-  ul .title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 600;
-  }
-
-  /* right hand arrangement of our services */
   .rh,
   .lh {
     width: 100%;
@@ -1156,54 +2179,104 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 1rem;
     margin-bottom: 2rem;
   }
 
-  .rh .down,
-  .lh .top {
+  .services .hrtitle {
     width: 100%;
-    row-gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    margin-bottom: 0.3rem;
   }
-
-  .rh .down h1,
-  .lh .top h1 {
-    font-size: 24px;
-    font-weight: 800;
+  .services .hrtitle h1 {
+    font-size: 22px;
+    font-weight: 700;
     line-height: 28px;
+    color: #092a41;
   }
 
-  .rh .line,
-  .lh .line {
-    width: 80%;
-    border: 0.1px solid #023c7e;
-    margin: 2px 0;
-  }
-
-  .rh .down p,
-  .lh .top p,
-  .our-service p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-  }
-
-  .rh button {
-    padding: 14px 20ox;
-    margin-top: 8px;
-  }
-
-  .rh .top,
-  .lh .down {
+  .services .hrline {
     width: 100%;
     height: auto;
-    padding: 6rem 10rem;
-    background-position: 50% 10%;
+    padding-left: 0;
+    border: 0.1px solid #023c7e;
   }
 
-  .rh {
-    flex-direction: column-reverse;
+  .rh .hrbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
   }
+
+  .lh .hrbody {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+
+  .rh .right,
+  .lh .left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+  }
+
+  .services p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #092a41;
+  }
+  ul .hrsubtitle {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 800;
+  }
+  .services button {
+    padding: 14px 20px;
+    margin-top: 0;
+  }
+
+  .hrrecruitment .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrtraining-dev .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrbusiness-partner .left {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrtalent-mgt .right {
+    width: 100%;
+    padding: 110px 0;
+  }
+
+  .hrstrat-pol .right {
+    width: 100%;
+    padding: 110px 0;
+  }
+  /* end of new code */
+
+  /* right hand arrangement of our services */
 
   .why-choose .left {
     width: 100%;
@@ -1265,7 +2338,7 @@
   .assurance p {
     color: rgb(225, 225, 225, 0.8);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 22px;
   }
 
@@ -1287,7 +2360,7 @@
     height: auto;
     justify-content: start;
     align-items: start;
-    padding: 1.5rem 0 1rem 3rem;
+    padding: 1.5rem 2rem 1rem 2rem;
   }
 
   .footer .left {
@@ -1297,6 +2370,7 @@
   .footer h3 {
     font-size: 14px;
     font-weight: 500;
+    white-space: nowrap;
   }
 
   .footer p {
@@ -1307,7 +2381,9 @@
   .footer .right {
     display: none;
   }
-
+  .footer .right {
+    display: flex;
+  }
   .footer .wrap {
     width: fit-content;
     height: auto;
@@ -1321,6 +2397,10 @@
   .wrap i {
     font-size: 12px;
     color: aqua;
+  }
+
+  .icon-box i {
+    font-size: 20px;
   }
 
   .reserve {
@@ -1358,12 +2438,11 @@
   }
 
   .page-header p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .breadcrumbs {
     column-gap: 0;
-    color: #ff0404;
   }
 
   /* ABOUT */
@@ -1536,33 +2615,24 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    row-gap: 0.5rem;
+    padding: 0 1rem;
+    row-gap: 0.3rem;
   }
 
   .our-services h1 {
     font-size: 28px;
     font-weight: 800;
     color: #092a41;
+    line-height: 32px;
   }
 
   .our-services .para {
     width: 100%;
-    color: #3d5771;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 26px;
+    color: #092a41;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
     margin-bottom: 1.5rem;
-  }
-
-  .services-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    row-gap: 3.5rem;
-    background-color: #d7d7d7;
   }
 
   /* CONTACT PAGE */

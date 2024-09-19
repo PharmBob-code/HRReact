@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 export default function About() {
   return (
     <div className="about">
-      <div className={`left container container-left`}>
+      <div className="about__left left">
         <h1>
           ABOUT <br />
           HR-LIFESTYLE
         </h1>
-        <div className="line"></div>
+        <div className="about__line"></div>
         <p>
           At HR-Lifestyle, our mission is to cultivate balanced and productive
           work environments that foster both individual and organizational
@@ -20,7 +22,7 @@ export default function About() {
         </Link>
       </div>
 
-      <div className={`right container container-right`}></div>
+      <div className="right"></div>
     </div>
   );
 }
